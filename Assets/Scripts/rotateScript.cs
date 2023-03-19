@@ -31,6 +31,6 @@ public class rotateScript : MonoBehaviour
         {
             currentSpeed = speed;
         }
-        transform.eulerAngles += new Vector3(0, joystickPos.x * currentSpeed, joystickPos.y * currentSpeed);
+        transform.eulerAngles += new Vector3(0, joystickPos.x * currentSpeed * Time.deltaTime, joystickPos.y * currentSpeed * Time.deltaTime);
     }
 }
