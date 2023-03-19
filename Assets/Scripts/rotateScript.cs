@@ -20,7 +20,7 @@ public class rotateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 rotate = RotateTelescope.action.ReadValue<Vector2>();
+        Vector2 joystickPos = RotateTelescope.action.ReadValue<Vector2>();
         float clicked = SpeedUp.action.ReadValue<float>();
 
         if(clicked > 0.1f)
@@ -31,8 +31,6 @@ public class rotateScript : MonoBehaviour
         {
             currentSpeed = speed;
         }
-        Debug.Log(clicked);
-
-        transform.RotateAround(transform.parent.position, new Vector3(rotate.y, rotate.x, 0), currentSpeed * Time.deltaTime);
+        transform.eulerAngles += new Vector3(0, joystickPos.x * currentSpeed, joystickPos.y * currentSpeed);
     }
 }

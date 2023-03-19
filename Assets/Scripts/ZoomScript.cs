@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class ZoomScript : MonoBehaviour
 {
-    public InputActionProperty lensMoveUpKey;
-    public InputActionProperty lensMoveDownKey;
     public InputActionProperty lensZoomUpKey;
     public InputActionProperty lensZoomDownKey;
 
