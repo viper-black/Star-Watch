@@ -1091,6 +1091,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6445029080885320501, guid: d9eb7a5208c79f9489390818cc59aa7c,
+        type: 3}
+      propertyPath: Zoom
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445029080885320501, guid: d9eb7a5208c79f9489390818cc59aa7c,
+        type: 3}
+      propertyPath: maxZoom
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445029080885320501, guid: d9eb7a5208c79f9489390818cc59aa7c,
+        type: 3}
+      propertyPath: minZoom
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6445029080885320503, guid: d9eb7a5208c79f9489390818cc59aa7c,
         type: 3}
       propertyPath: far clip plane
