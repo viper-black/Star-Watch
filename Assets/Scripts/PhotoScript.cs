@@ -17,9 +17,10 @@ public class PhotoScript : MonoBehaviour
     public bool MediumPictureTaken = false;
     public bool closePictureTaken = false;
     int pictureTakenPenalty;
-    float farHeight = 40;
+    [SerializeField]float farHeight = 40;
     [SerializeField] float mediumHeight;
     [SerializeField] float closeHeight;
+    
     // Start is called before the first frame update
     void Start()
     {

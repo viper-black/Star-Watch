@@ -125,18 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
-  PointWorth: 0
-  delayTime: 10
-  takePhoto:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Take Photo
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 0f34ced8-e58d-4c11-b033-319c56cd7b64
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
+  PointWorth: 30
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 40
+  mediumHeight: 5
+  closeHeight: 2.5

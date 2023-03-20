@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4645877239996827318}
   - component: {fileID: 8635268733731490067}
   - component: {fileID: 5778774045512875481}
+  - component: {fileID: 4507319536302308935}
+  - component: {fileID: 407804461559779236}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -83,3 +85,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &4507319536302308935
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5418578091484453900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.009981121
+  m_Center: {x: 0, y: 0, z: -9.313226e-10}
+--- !u!114 &407804461559779236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5418578091484453900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointWorth: 50
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 40
+  mediumHeight: 5
+  closeHeight: 2.5

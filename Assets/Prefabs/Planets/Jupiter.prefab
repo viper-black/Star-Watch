@@ -58,21 +58,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
-  PointWorth: 0
-  delayTime: 50
-  takePhoto:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Take Photo
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 804a2232-5e77-49c2-b44a-be0be3b91c2e
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
+  PointWorth: 30
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 0.45
+  mediumHeight: 0.15
+  closeHeight: 0.1
 --- !u!1 &4433448552485286638
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,21 +164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
   PointWorth: 70
-  delayTime: 10
-  takePhoto:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Take Photo
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: a7cb74af-c817-4daa-a321-d38f70858976
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 40
+  mediumHeight: 0.45
+  closeHeight: 0.15
 --- !u!135 &8642974746783307720
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -258,18 +242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
-  PointWorth: 0
-  delayTime: 100
-  takePhoto:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Take Photo
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 5ff663f0-6695-4098-8f74-67d70d05eda6
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
+  PointWorth: 50
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 0.45
+  mediumHeight: 0.15
+  closeHeight: 0.1
