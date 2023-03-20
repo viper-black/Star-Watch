@@ -9,52 +9,72 @@ public class PhotoScript : MonoBehaviour
     Plane[] cameraFrustum;
     Collider collider;
 
-    [SerializeField] PointScript ps;
+    PointScript ps;
     [SerializeField] int PointWorth;
+    int pointsToAdd;
 
-    [SerializeField] float delayTime = 10f;
-    bool delayOver = true;
-
-    public InputActionProperty takePhoto;
+    public bool farPictureTaken = false;
+    public bool MediumPictureTaken = false;
+    public bool closePictureTaken = false;
+    int pictureTakenPenalty;
+    float farHeight = 40;
+    [SerializeField] float mediumHeight;
+    [SerializeField] float closeHeight;
     // Start is called before the first frame update
     void Start()
     {
+        ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
         cam = FindObjectOfType<ZoomScript>().GetComponent<Camera>();
         collider = GetComponent<Collider>();
+        pictureTakenPenalty = PointWorth / 3 * 2;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void TakePicture()
     {
-        TakePicture();
-    }
-    void TakePicture()
-    {
-        float trigger = takePhoto.action.ReadValue<float>();
-
         var bounds = collider.bounds;
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(cam);
-        if (trigger > 0.5f && delayOver == true)
-        {
-            delayOver = false;
-            Invoke("Delay", delayTime);
             if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
             {
-                int pointsToAdd = PointWorth - Mathf.RoundToInt(cam.fieldOfView);
-                GetComponent<MeshRenderer>().material.color = Color.green;
-                if (pointsToAdd > 0)
-                {
-                    ps.addPoints(pointsToAdd);
-                }
+            processPoints();
+            }
+    }
+    void processPoints()
+    {
+        pointsToAdd = PointWorth - Mathf.RoundToInt(cam.fieldOfView);
+        if (cam.fieldOfView <= farHeight && cam.fieldOfView > mediumHeight)
+        {
+            if(farPictureTaken == true)
+            {
+                ps.addPoints(pointsToAdd - pictureTakenPenalty);
             }
             else
             {
-                GetComponent<MeshRenderer>().material.color = Color.red;
+                ps.addPoints(pointsToAdd);
+                farPictureTaken = true;
             }
         }
-    }
-    void Delay()
-    {
-        delayOver = true;
+        else if (cam.fieldOfView <= mediumHeight && cam.fieldOfView > closeHeight)
+        {
+            if (MediumPictureTaken == true)
+            {
+                ps.addPoints(pointsToAdd - pictureTakenPenalty);
+            }
+            else
+            {
+                ps.addPoints(pointsToAdd);
+                MediumPictureTaken = true;
+            }
+        }
+        else if (cam.fieldOfView <= closeHeight)
+        {
+            if (closePictureTaken == true)
+            {
+                ps.addPoints(pointsToAdd - pictureTakenPenalty);
+            }
+            else
+            {
+                ps.addPoints(pointsToAdd);
+                closePictureTaken = true;
+            }
+        }
     }
 }

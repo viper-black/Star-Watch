@@ -5,20 +5,17 @@ using UnityEngine;
 public class PointScript : MonoBehaviour
 {
     int points;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Debug.Log(points);
+
     }
 
     public void addPoints(int pointsToAdd)
     {
-        points += pointsToAdd;
+        if(pointsToAdd > 0)
+        {
+            points += pointsToAdd;
+            Debug.Log(points);
+        }
     }
 }

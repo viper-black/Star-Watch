@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8896537389222307702}
   - component: {fileID: 6670445501013513148}
   - component: {fileID: 201629678}
+  - component: {fileID: 2259987020150476396}
+  - component: {fileID: 5851719914732834234}
   m_Layer: 0
   m_Name: DaMOON 1
   m_TagString: Untagged
@@ -98,3 +100,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angle: {x: 0, y: 0, z: 0}
   speed: 0
+--- !u!135 &2259987020150476396
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157416139121029737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9996724
+  m_Center: {x: 0.00000005960464, y: 0, z: 0.00000005960464}
+--- !u!114 &5851719914732834234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157416139121029737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  PointWorth: 0
+  delayTime: 10
+  takePhoto:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Take Photo
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 0f34ced8-e58d-4c11-b033-319c56cd7b64
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
