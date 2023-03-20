@@ -1257,6 +1257,115 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f17df784494ef045821667f1e573a0c, type: 3}
+--- !u!1001 &257447777981238928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1572
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4915
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481538688972234293, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001228819538658447, guid: 436ef04f67ebb7e4382e7b8677184e30,
+        type: 3}
+      propertyPath: m_Name
+      value: saturn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 436ef04f67ebb7e4382e7b8677184e30, type: 3}
+--- !u!1 &3461823711112997812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3717859141887403300, guid: 436ef04f67ebb7e4382e7b8677184e30,
+    type: 3}
+  m_PrefabInstance: {fileID: 257447777981238928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5799194930760220936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461823711112997812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointWorth: 70
+  farPictureTaken: 0
+  MediumPictureTaken: 0
+  closePictureTaken: 0
+  farHeight: 40
+  mediumHeight: 1
+  closeHeight: 0.3
 --- !u!1001 &8071146270553844833
 PrefabInstance:
   m_ObjectHideFlags: 0
