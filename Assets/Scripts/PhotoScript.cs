@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PhotoScript : MonoBehaviour
 {
+    [SerializeField] GameObject tempCamPos;
     Camera cam;
     Plane[] cameraFrustum;
-    Collider collider;
+    Collider Dacollider;
 
     PointScript ps;
     [SerializeField] int PointWorth;
@@ -20,22 +21,25 @@ public class PhotoScript : MonoBehaviour
     [SerializeField]float farHeight = 40;
     [SerializeField] float mediumHeight;
     [SerializeField] float closeHeight;
+
+    [SerializeField] List<GameObject> POIS;
     
     // Start is called before the first frame update
     void Start()
     {
         ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
         cam = FindObjectOfType<ZoomScript>().GetComponent<Camera>();
-        collider = GetComponent<Collider>();
+        Dacollider = GetComponent<Collider>();
         pictureTakenPenalty = PointWorth / 3 * 2;
     }
     public void TakePicture()
     {
-        var bounds = collider.bounds;
+        var bounds = Dacollider.bounds;
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(cam);
             if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
             {
             processPoints();
+            ScanForPOI();
             }
     }
     void processPoints()
@@ -75,6 +79,17 @@ public class PhotoScript : MonoBehaviour
             {
                 ps.addPoints(pointsToAdd);
                 closePictureTaken = true;
+            }
+        }
+    }
+    public void ScanForPOI()
+    {
+        for(int i = 0; i < POIS.Count; i++)
+        {
+            Physics.Raycast(cam.transform.position,POIS[i].transform.position - cam.transform.position, out var hit, Mathf.Infinity);
+            if(hit.collider.gameObject.tag == "POI")
+            {
+                ps.addPoints(POIS[i].GetComponent<POIScript>().pointsToAdd);
             }
         }
     }
