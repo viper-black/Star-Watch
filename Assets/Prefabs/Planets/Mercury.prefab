@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3346004531363442062}
   - component: {fileID: 472491886153561109}
   - component: {fileID: 9159019072812640637}
+  - component: {fileID: 642146592851115969}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -117,3 +118,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.010000003
   m_Center: {x: -0.000000004190951, y: -0.00000000325963, z: -4.6322114e-23}
+--- !u!114 &642146592851115969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850464519791594587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebed3b9fd828ed41bec401e3696fbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: -1, y: 3, z: 0}
+  speed: 0.02
+  rotateSpeed: 0.4

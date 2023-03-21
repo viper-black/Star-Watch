@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 169834453188827424}
   - component: {fileID: 169834453188827438}
   - component: {fileID: 169834453188827425}
+  - component: {fileID: 1550237239}
   m_Layer: 0
   m_Name: saturn2_B
   m_TagString: Untagged
@@ -83,6 +84,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1550237239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834453188827427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebed3b9fd828ed41bec401e3696fbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: 0, y: 0, z: 0}
+  speed: 0
+  rotateSpeed: 2
 --- !u!1 &169834453265163319
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +404,7 @@ GameObject:
   - component: {fileID: 169834454230689041}
   - component: {fileID: 169834454230689055}
   - component: {fileID: 169834454230689054}
+  - component: {fileID: 683507424}
   m_Layer: 0
   m_Name: Saturn2_A
   m_TagString: Untagged
@@ -460,6 +477,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &683507424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834454230689040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebed3b9fd828ed41bec401e3696fbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: 0, y: 0, z: 0}
+  speed: 0
+  rotateSpeed: 2
 --- !u!1 &4602004206332465283
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +505,7 @@ GameObject:
   - component: {fileID: 2656391510838440278}
   - component: {fileID: 881759637967169741}
   - component: {fileID: 8478409151929054629}
+  - component: {fileID: 169834454756324264}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -487,9 +520,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4602004206332465283}
-  m_LocalRotation: {x: -0.6435256, y: -0, z: -0, w: 0.7654246}
+  m_LocalRotation: {x: -0.64352256, y: 0, z: 0, w: 0.7654271}
   m_LocalPosition: {x: -30.8, y: 103.6, z: 30.8}
-  m_LocalScale: {x: 5823, y: 5823, z: 5823}
+  m_LocalScale: {x: 1700, y: 1700, z: 1700}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 169834454230689041}
@@ -581,3 +614,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.010000003
   m_Center: {x: -0.000000004190951, y: -0.00000000325963, z: -4.6322114e-23}
+--- !u!114 &169834454756324264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602004206332465283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebed3b9fd828ed41bec401e3696fbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: 1, y: 5, z: 0}
+  speed: 0.02
+  rotateSpeed: 3

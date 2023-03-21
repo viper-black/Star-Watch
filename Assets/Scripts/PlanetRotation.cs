@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateAround : MonoBehaviour
+public class PlanetRotation : MonoBehaviour
 {
     [SerializeField] Vector3 angle;
     [SerializeField] float speed;
+    [SerializeField] float rotateSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +17,6 @@ public class RotateAround : MonoBehaviour
     void Update()
     {
         transform.RotateAround(new Vector3(0, 0, 0), angle, speed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, rotateSpeed * Time.deltaTime));
     }
 }
