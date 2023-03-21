@@ -1006,6 +1006,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b04098d5bf739145b8aa8034998443d, type: 3}
+--- !u!1 &8071146270553844834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8071146270746546438, guid: 7b04098d5bf739145b8aa8034998443d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8071146270553844833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8071146270553844835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8071146270553844834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466752796924e764e84390a7429efde6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeUp:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Time Up
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 7d9cfa9a-130b-48f3-ada9-5ff052c0d978
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7604365368786111758, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  TimeDown:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Time Down
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 075b5662-e356-4d76-9983-b0b8e2a8b43f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 2653426994218577671, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  addTime: 0.2
 --- !u!1001 &8147270950717260456
 PrefabInstance:
   m_ObjectHideFlags: 0

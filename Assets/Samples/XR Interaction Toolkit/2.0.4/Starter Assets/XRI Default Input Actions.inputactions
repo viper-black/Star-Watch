@@ -278,6 +278,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "YButton1",
+                    "type": "Button",
+                    "id": "2f11cd39-6cd3-444a-9df2-5b8e35200d67",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "XButton",
+                    "type": "Button",
+                    "id": "846d5275-6b39-4950-b719-0a72712cd82d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -456,6 +474,28 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "59b803ea-276d-4466-8333-21fa67dda5bf",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "Press,Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "YButton1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb58a126-d901-4c42-8960-7895fd56dc85",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "Press,Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

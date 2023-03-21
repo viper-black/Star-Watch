@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: {x: 0, y: 2, z: 1}
-  speed: 0.2
-  rotateSpeed: 1
+  speed: 0.1
+  rotateSpeed: 0.5
