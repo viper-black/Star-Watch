@@ -28,12 +28,12 @@ public class PhotoScript : MonoBehaviour
     void Start()
     {
         ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
-        cam = FindObjectOfType<ZoomScript>().GetComponent<Camera>();
         Dacollider = GetComponent<Collider>();
         pictureTakenPenalty = PointWorth / 3 * 2;
     }
     public void TakePicture()
     {
+        getRefrenceToCamera();
         var bounds = Dacollider.bounds;
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(cam);
             if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
@@ -92,5 +92,9 @@ public class PhotoScript : MonoBehaviour
                 ps.addPoints(POIS[i].GetComponent<POIScript>().pointsToAdd);
             }
         }
+    }
+    public void getRefrenceToCamera()
+    {
+        cam = FindObjectOfType<ZoomScript>().GetComponent<Camera>();
     }
 }
