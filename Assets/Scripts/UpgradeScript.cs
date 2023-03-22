@@ -12,6 +12,7 @@ public class UpgradeScript : MonoBehaviour
     [SerializeField] GameObject spawnPos;
     GameObject currentGameObjectTelescope;
     [SerializeField] TextMeshProUGUI costTextField;
+    [SerializeField] TextMeshProUGUI pointsTextField;
     PhotoScript photS;
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,14 @@ public class UpgradeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        pointsTextField.text = "points: " + PS.points;
     }
 
     public void Upgrade()
     {
         if(PS.points >= Cost && currentTelescope != Telescopes.Count -1)
         {
+            PS.points -= Cost;
             Cost = Cost * 2;
             Destroy(currentGameObjectTelescope);
             currentTelescope += 1;

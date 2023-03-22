@@ -23,6 +23,9 @@ public class PhotoScript : MonoBehaviour
     [SerializeField]float farHeight = 40;
     [SerializeField] float mediumHeight;
     [SerializeField] float closeHeight;
+    int farPenalty;
+    int mediumPenalty;
+    int closePenalty;
 
     [SerializeField] List<GameObject> POIS;
     
@@ -31,6 +34,9 @@ public class PhotoScript : MonoBehaviour
     {
         ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
         Dacollider = GetComponent<Collider>();
+        farPenalty = pictureTakenPenalty;
+        mediumPenalty = pictureTakenPenalty;
+        closePenalty = pictureTakenPenalty;
     }
     public void TakePicture()
     {
@@ -49,7 +55,8 @@ public class PhotoScript : MonoBehaviour
         {
             if(farPictureTaken == true)
             {
-                ps.addPoints(FarWorth - pictureTakenPenalty);
+                ps.addPoints(FarWorth - farPenalty);
+                farPenalty += pictureTakenPenalty;
             }
             else
             {
@@ -61,7 +68,8 @@ public class PhotoScript : MonoBehaviour
         {
             if (MediumPictureTaken == true)
             {
-                ps.addPoints(MedWorth - pictureTakenPenalty);
+                ps.addPoints(MedWorth - mediumPenalty);
+                mediumPenalty += pictureTakenPenalty;
             }
             else
             {
@@ -73,7 +81,8 @@ public class PhotoScript : MonoBehaviour
         {
             if (closePictureTaken == true)
             {
-                ps.addPoints(CloseWorth - pictureTakenPenalty);
+                ps.addPoints(CloseWorth - closePenalty);
+                closePenalty += pictureTakenPenalty;
             }
             else
             {
