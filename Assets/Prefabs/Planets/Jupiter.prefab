@@ -98,13 +98,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21d6e44c3b05b240b381ec4e0e1a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointWorth: 70
+  tempCamPos: {fileID: 0}
+  FarWorth: 15
+  MedWorth: 30
+  CloseWorth: 40
   farPictureTaken: 0
   MediumPictureTaken: 0
   closePictureTaken: 0
+  pictureTakenPenalty: 0
   farHeight: 40
-  mediumHeight: 0.45
-  closeHeight: 0.15
+  mediumHeight: 0.5
+  closeHeight: 0.2
+  POIS: []
 --- !u!135 &2908399444369174176
 SphereCollider:
   m_ObjectHideFlags: 0

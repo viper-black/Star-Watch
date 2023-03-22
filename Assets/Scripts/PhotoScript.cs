@@ -11,13 +11,15 @@ public class PhotoScript : MonoBehaviour
     Collider Dacollider;
 
     PointScript ps;
-    [SerializeField] int PointWorth;
+    [SerializeField] int FarWorth;
+    [SerializeField] int MedWorth;
+    [SerializeField] int CloseWorth;
     int pointsToAdd;
-
+    
     public bool farPictureTaken = false;
     public bool MediumPictureTaken = false;
     public bool closePictureTaken = false;
-    int pictureTakenPenalty;
+    [SerializeField]int pictureTakenPenalty;
     [SerializeField]float farHeight = 40;
     [SerializeField] float mediumHeight;
     [SerializeField] float closeHeight;
@@ -29,7 +31,6 @@ public class PhotoScript : MonoBehaviour
     {
         ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
         Dacollider = GetComponent<Collider>();
-        pictureTakenPenalty = PointWorth / 3 * 2;
     }
     public void TakePicture()
     {
@@ -44,16 +45,15 @@ public class PhotoScript : MonoBehaviour
     }
     void processPoints()
     {
-        pointsToAdd = PointWorth - Mathf.RoundToInt(cam.fieldOfView);
         if (cam.fieldOfView <= farHeight && cam.fieldOfView > mediumHeight)
         {
             if(farPictureTaken == true)
             {
-                ps.addPoints(pointsToAdd - pictureTakenPenalty);
+                ps.addPoints(FarWorth - pictureTakenPenalty);
             }
             else
             {
-                ps.addPoints(pointsToAdd);
+                ps.addPoints(FarWorth);
                 farPictureTaken = true;
             }
         }
@@ -61,11 +61,11 @@ public class PhotoScript : MonoBehaviour
         {
             if (MediumPictureTaken == true)
             {
-                ps.addPoints(pointsToAdd - pictureTakenPenalty);
+                ps.addPoints(MedWorth - pictureTakenPenalty);
             }
             else
             {
-                ps.addPoints(pointsToAdd);
+                ps.addPoints(MedWorth);
                 MediumPictureTaken = true;
             }
         }
@@ -73,11 +73,11 @@ public class PhotoScript : MonoBehaviour
         {
             if (closePictureTaken == true)
             {
-                ps.addPoints(pointsToAdd - pictureTakenPenalty);
+                ps.addPoints(CloseWorth - pictureTakenPenalty);
             }
             else
             {
-                ps.addPoints(pointsToAdd);
+                ps.addPoints(CloseWorth);
                 closePictureTaken = true;
             }
         }
