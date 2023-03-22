@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1313858368}
   - component: {fileID: 1313858370}
   - component: {fileID: 1313858369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1535307042}
   - component: {fileID: 1535307041}
   - component: {fileID: 1535307040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 3309385465674557583}
   - component: {fileID: 1892240928493561642}
   - component: {fileID: 4442343982353126368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmallTelescope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
