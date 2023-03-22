@@ -566,7 +566,7 @@ MonoBehaviour:
       type: 3}
   ZoomSens: 0.025
   minZoom: 40
-  maxZoom: 1.5
+  maxZoom: 0.5
 --- !u!1 &5303744338824253071
 GameObject:
   m_ObjectHideFlags: 0

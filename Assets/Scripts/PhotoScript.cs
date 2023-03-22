@@ -19,7 +19,7 @@ public class PhotoScript : MonoBehaviour
     public bool farPictureTaken = false;
     public bool MediumPictureTaken = false;
     public bool closePictureTaken = false;
-    [SerializeField]int pictureTakenPenalty;
+    int pictureTakenPenalty;
     [SerializeField]float farHeight = 40;
     [SerializeField] float mediumHeight;
     [SerializeField] float closeHeight;
@@ -32,6 +32,7 @@ public class PhotoScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pictureTakenPenalty = CloseWorth / 3 * 2;
         ps = FindObjectOfType<PointScript>().GetComponent<PointScript>();
         Dacollider = GetComponent<Collider>();
         farPenalty = pictureTakenPenalty;
@@ -46,7 +47,6 @@ public class PhotoScript : MonoBehaviour
             if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
             {
             processPoints();
-            ScanForPOI();
             }
     }
     void processPoints()
@@ -88,10 +88,11 @@ public class PhotoScript : MonoBehaviour
             {
                 ps.addPoints(CloseWorth);
                 closePictureTaken = true;
+                ScanForPOI();
             }
         }
     }
-    public void ScanForPOI()
+    void ScanForPOI()
     {
         for(int i = 0; i < POIS.Count; i++)
         {
