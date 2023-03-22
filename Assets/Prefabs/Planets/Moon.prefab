@@ -1,5 +1,217 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1222195881153823914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2959160681123186345}
+  - component: {fileID: 3659159782981045217}
+  - component: {fileID: 6930343955289883617}
+  m_Layer: 0
+  m_Name: The Lunar Maria
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2959160681123186345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222195881153823914}
+  m_LocalRotation: {x: 0.40578032, y: 0.1997692, z: -0.17889617, w: 0.8737453}
+  m_LocalPosition: {x: -0.008481, y: 0.000695, z: 0.004932}
+  m_LocalScale: {x: 1, y: 7.0915403, z: 1.2012898}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5351600987782141104}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 51.313, y: 19.04, z: -13.932}
+--- !u!65 &3659159782981045217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222195881153823914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6930343955289883617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222195881153823914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 20
+--- !u!1 &2928352561027479589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3151729673770791579}
+  - component: {fileID: 2698935029800545095}
+  - component: {fileID: 7631958582788235497}
+  m_Layer: 0
+  m_Name: Apollo 11
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3151729673770791579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928352561027479589}
+  m_LocalRotation: {x: 0.000000014901163, y: 0.00000005960465, z: -0.26404837, w: 0.9645095}
+  m_LocalPosition: {x: -0.00906, y: 0.004238, z: -0.000178}
+  m_LocalScale: {x: 0.07703413, y: 0.20921248, z: 0.20921248}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5351600987782141104}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.621}
+--- !u!114 &2698935029800545095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928352561027479589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 30
+--- !u!65 &7631958582788235497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928352561027479589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4148222908172803548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4923998926059136595}
+  - component: {fileID: 5260820959231478443}
+  - component: {fileID: 8284634824116958638}
+  m_Layer: 0
+  m_Name: lunarlandernofoil_carbajal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4923998926059136595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148222908172803548}
+  m_LocalRotation: {x: 0.00000014901163, y: -0.00000005960465, z: 0.472292, w: 0.8814422}
+  m_LocalPosition: {x: -0.009065062, y: 0.004223012, z: -0.00017001036}
+  m_LocalScale: {x: 0.0001, y: 0.0001, z: 0.0001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5351600987782141104}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.366}
+--- !u!33 &5260820959231478443
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148222908172803548}
+  m_Mesh: {fileID: 3358674717517231407, guid: a2256edd411ad0346942101b75f64978, type: 3}
+--- !u!23 &8284634824116958638
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148222908172803548}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 8529481535521766085, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: 1173441822746199401, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -7795682844947938768, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: 6240576843349501273, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -7238897914379350543, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -8078617138743364992, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -597521319923820054, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -9092115990503165775, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: 8496142233418263266, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: 3155177268879494355, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: -1271446700005736667, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  - {fileID: 8885836184462977346, guid: a2256edd411ad0346942101b75f64978, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4688075765769702922
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +244,11 @@ Transform:
   m_LocalPosition: {x: 229.6, y: 0, z: 30.8}
   m_LocalScale: {x: 173, y: 173, z: 173}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2959160681123186345}
+  - {fileID: 7331565328371803339}
+  - {fileID: 4923998926059136595}
+  - {fileID: 3151729673770791579}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -107.475, y: 13.955002, z: -90}
@@ -109,7 +325,10 @@ MonoBehaviour:
   farHeight: 40
   mediumHeight: 8
   closeHeight: 2.5
-  POIS: []
+  POIS:
+  - {fileID: 1222195881153823914}
+  - {fileID: 8280988600171112337}
+  - {fileID: 2928352561027479589}
 --- !u!135 &827433453224471340
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -138,3 +357,62 @@ MonoBehaviour:
   angle: {x: 0, y: 2, z: 1}
   speed: 0.1
   rotateSpeed: 0.5
+--- !u!1 &8280988600171112337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7331565328371803339}
+  - component: {fileID: 1023654615475936880}
+  - component: {fileID: 3379763656501360560}
+  m_Layer: 0
+  m_Name: Big Crater
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7331565328371803339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8280988600171112337}
+  m_LocalRotation: {x: 0.000000029802326, y: 0.000000029802326, z: 0.24717881, w: 0.9689699}
+  m_LocalPosition: {x: -0.009266, y: -0.00337, z: 0.001978}
+  m_LocalScale: {x: 0.8596599, y: 2.3347, z: 2.3347}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5351600987782141104}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.621}
+--- !u!114 &1023654615475936880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8280988600171112337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 20
+--- !u!65 &3379763656501360560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8280988600171112337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}

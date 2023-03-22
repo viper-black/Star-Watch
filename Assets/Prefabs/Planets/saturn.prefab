@@ -142,9 +142,11 @@ GameObject:
   - component: {fileID: 169834453383013724}
   - component: {fileID: 169834453383013722}
   - component: {fileID: 169834453383013725}
+  - component: {fileID: 6126395659903152116}
+  - component: {fileID: 4805255891293653227}
   m_Layer: 0
   m_Name: Enceladus
-  m_TagString: Untagged
+  m_TagString: POI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,6 +216,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &6126395659903152116
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834453383013727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 10.000007
+  m_Center: {x: 0.0000004768374, y: -0.000030517578, z: -2.1316282e-14}
+--- !u!114 &4805255891293653227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834453383013727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 30
 --- !u!1 &169834453428573128
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,9 +317,11 @@ GameObject:
   - component: {fileID: 169834453973638189}
   - component: {fileID: 169834453973638187}
   - component: {fileID: 169834453973638186}
+  - component: {fileID: 7760669770602525685}
+  - component: {fileID: 5664558623270168615}
   m_Layer: 0
   m_Name: Mimas
-  m_TagString: Untagged
+  m_TagString: POI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,6 +391,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &7760669770602525685
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834453973638188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8.000002
+  m_Center: {x: 0, y: -0.000061035156, z: -0.00012207031}
+--- !u!114 &5664558623270168615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169834453973638188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 30
 --- !u!1 &169834454048273626
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +661,9 @@ MonoBehaviour:
   farHeight: 40
   mediumHeight: 0.4
   closeHeight: 0.15
-  POIS: []
+  POIS:
+  - {fileID: 169834453973638188}
+  - {fileID: 169834453383013727}
 --- !u!135 &8478409151929054629
 SphereCollider:
   m_ObjectHideFlags: 0

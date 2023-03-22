@@ -32,7 +32,10 @@ Transform:
   m_LocalPosition: {x: -3137, y: 4069, z: -15000}
   m_LocalScale: {x: 2089, y: 2089, z: 2089}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5232469770239760651}
+  - {fileID: 1809062318528691192}
+  - {fileID: 8370661794848946509}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -73.339, y: 0, z: 0}
@@ -109,7 +112,10 @@ MonoBehaviour:
   farHeight: 40
   mediumHeight: 1
   closeHeight: 0.25
-  POIS: []
+  POIS:
+  - {fileID: 9139055723606614955}
+  - {fileID: 6553252825010724436}
+  - {fileID: 4099838565649888763}
 --- !u!135 &5491255302063727434
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -138,3 +144,180 @@ MonoBehaviour:
   angle: {x: 1, y: 0, z: 0}
   speed: 0.025
   rotateSpeed: 0.5
+--- !u!1 &4099838565649888763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8370661794848946509}
+  - component: {fileID: 1512376079801600129}
+  - component: {fileID: 8800290141464533006}
+  m_Layer: 0
+  m_Name: Big Ice Peak
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8370661794848946509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4099838565649888763}
+  m_LocalRotation: {x: 0.007930308, y: 0.03039648, z: -0.2523189, w: 0.9671341}
+  m_LocalPosition: {x: -0.0001599945, y: -0.0002699122, z: 0.009909962}
+  m_LocalScale: {x: 3.9102998, y: 3.9967136, z: 1.1032555}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 940070843670027478}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 1.758, y: 3.142, z: -29.196}
+--- !u!65 &1512376079801600129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4099838565649888763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8800290141464533006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4099838565649888763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 25
+--- !u!1 &6553252825010724436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809062318528691192}
+  - component: {fileID: 6661442133790467063}
+  - component: {fileID: 1753032771599655535}
+  m_Layer: 0
+  m_Name: Small Ice Peak
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1809062318528691192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553252825010724436}
+  m_LocalRotation: {x: -0.019514676, y: -0.07479966, z: -0.25168806, w: 0.9647162}
+  m_LocalPosition: {x: -0.00045, y: -0.00011, z: -0.00973}
+  m_LocalScale: {x: 1.4254, y: 1.4569, z: 1.5649}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 940070843670027478}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.319, y: -7.752, z: -28.952}
+--- !u!65 &6661442133790467063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553252825010724436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1753032771599655535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553252825010724436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 20
+--- !u!1 &9139055723606614955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5232469770239760651}
+  - component: {fileID: 1246078101920963162}
+  - component: {fileID: 5402013233502868248}
+  m_Layer: 0
+  m_Name: Big Crater
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5232469770239760651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9139055723606614955}
+  m_LocalRotation: {x: -0.019514676, y: -0.07479966, z: -0.25168806, w: 0.9647162}
+  m_LocalPosition: {x: 0.00651, y: -0.00672, z: 0.00317}
+  m_LocalScale: {x: 1, y: 1.4569, z: 1.5649}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 940070843670027478}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -4.319, y: -7.752, z: -28.952}
+--- !u!65 &1246078101920963162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9139055723606614955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5402013233502868248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9139055723606614955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 25

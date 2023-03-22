@@ -90,6 +90,7 @@ public class PhotoScript : MonoBehaviour
             if(hit.collider.gameObject.tag == "POI")
             {
                 ps.addPoints(POIS[i].GetComponent<POIScript>().pointsToAdd);
+                POIS[i].GetComponent<POIScript>().pictureTaken = true;
             }
         }
     }

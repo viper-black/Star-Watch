@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 18571, y: 321, z: 30000}
   m_LocalScale: {x: 1864.2667, y: 1864.267, z: 1864.267}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6789212311522949597}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -109,7 +110,8 @@ MonoBehaviour:
   farHeight: 40
   mediumHeight: 0.5
   closeHeight: 0.2
-  POIS: []
+  POIS:
+  - {fileID: 9003849382903852753}
 --- !u!135 &2908399444369174176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -138,3 +140,62 @@ MonoBehaviour:
   angle: {x: 1, y: 5, z: 0}
   speed: 0.025
   rotateSpeed: 1.5
+--- !u!1 &9003849382903852753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6789212311522949597}
+  - component: {fileID: 3932229776235404126}
+  - component: {fileID: 5288353383691181148}
+  m_Layer: 0
+  m_Name: Red Storm
+  m_TagString: POI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6789212311522949597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003849382903852753}
+  m_LocalRotation: {x: -0, y: -0, z: 0.43767977, w: 0.89913094}
+  m_LocalPosition: {x: -0.0061, y: -0.00682, z: -0.00334}
+  m_LocalScale: {x: 1, y: 2.6463, z: 1.8607}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7594092665596743996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 51.912}
+--- !u!65 &3932229776235404126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003849382903852753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.001, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5288353383691181148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003849382903852753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555018d7a7c24944da85876755e633eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 30
