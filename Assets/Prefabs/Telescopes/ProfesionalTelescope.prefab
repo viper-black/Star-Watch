@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.0125
-  speedMultiplier: 5
+  speedMultiplier: 10
 --- !u!1 &4785523820388361477
 GameObject:
   m_ObjectHideFlags: 0

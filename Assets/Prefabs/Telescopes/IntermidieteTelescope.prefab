@@ -612,4 +612,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.0125
-  speedMultiplier: 5
+  speedMultiplier: 10

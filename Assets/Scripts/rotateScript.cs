@@ -7,7 +7,7 @@ public class rotateScript : MonoBehaviour
 {
 
     [SerializeField] float speed;
-    [SerializeField] float speedMultiplier;
+    [SerializeField] float speedMultiplier = 10;
     float currentSpeed;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,14 @@ public class rotateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.LeftControl))
+        {
+            currentSpeed = speed * speedMultiplier;
+        }
+        if(Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            currentSpeed = speed;
+        }
         if(Input.GetKey(KeyCode.I))
         {
             transform.eulerAngles += new Vector3(0, 0, currentSpeed);
