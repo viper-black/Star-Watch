@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public class TimeSpeed : MonoBehaviour
 {
-    public InputActionProperty TimeUp;
-    public InputActionProperty TimeDown;
 
 
     [SerializeField] float addTime;
@@ -14,23 +12,19 @@ public class TimeSpeed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float Ybutton = TimeUp.action.ReadValue<float>();
-        float Xbutton = TimeDown.action.ReadValue<float>();
-
-        if(Ybutton > 0.1f && Time.timeScale <= 90)
+        if(Input.GetKeyDown(KeyCode.Alpha2))
         {
             Time.timeScale += addTime;
         }
-        else if (Xbutton > 0.1f)
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Time.timeScale = 1;
-            Debug.Log("we Good");
         }
     }
 }

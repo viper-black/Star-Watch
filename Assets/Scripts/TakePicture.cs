@@ -19,8 +19,7 @@ public class TakePicture : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float trigger = takePhoto.action.ReadValue<float>();
-        if(trigger > 0.5f && delayOver == true)
+        if(Input.GetKeyDown(KeyCode.P))
         {
             delayOver = false;
             for(int i = 0; i < PS.Length; i++)

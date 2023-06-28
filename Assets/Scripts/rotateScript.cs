@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public class rotateScript : MonoBehaviour
 {
-    public InputActionProperty RotateTelescope;
-    public InputActionProperty SpeedUp;
 
     [SerializeField] float speed;
     [SerializeField] float speedMultiplier;
@@ -20,17 +18,21 @@ public class rotateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 joystickPos = RotateTelescope.action.ReadValue<Vector2>();
-        float clicked = SpeedUp.action.ReadValue<float>();
-
-        if(clicked > 0.1f)
+        if(Input.GetKey(KeyCode.I))
         {
-            currentSpeed += speedMultiplier;
+            transform.eulerAngles += new Vector3(0, 0, currentSpeed);
         }
-        else
+        if (Input.GetKey(KeyCode.K))
         {
-            currentSpeed = speed;
+            transform.eulerAngles += new Vector3(0, 0, -currentSpeed);
         }
-        transform.eulerAngles += new Vector3(0, joystickPos.x * currentSpeed * Time.deltaTime, joystickPos.y * currentSpeed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.J))
+        {
+            transform.eulerAngles += new Vector3(0, currentSpeed, 0);
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            transform.eulerAngles += new Vector3(0, -currentSpeed, 0);
+        }
     }
 }

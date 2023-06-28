@@ -35,11 +35,11 @@ public class ZoomScript : MonoBehaviour
         {
             cam.fieldOfView = minZoom;
         }
-        else if(buttonAPressed > 0.1)
+        else if(Input.GetKey(KeyCode.U))
         {
             cam.fieldOfView += ZoomSens;
         }
-        else if (buttonBPressed > 0.1)
+        else if (Input.GetKey(KeyCode.O))
         {
             cam.fieldOfView -= ZoomSens;
         }
